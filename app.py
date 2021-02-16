@@ -10,4 +10,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return jsonify(app=f'{app.__dict__}', bilal='testing', envs=dict(os.environ))
+    return jsonify( bilal='testing', envs=dict(os.environ))
